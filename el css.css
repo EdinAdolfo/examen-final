@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Fondo negro */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #808080; /* Fondo gris */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    background-color: #222;
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.button {
+    background-color: #f44336; /* Botones rojos */
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:active {
+    background-color: #d32f2f; /* Botones rojos más oscuros al presionar */
+}
+
+.button:nth-child(4n) {
+    background-color: #ff5722; /* Botones de operaciones rojos diferentes */
+}
+
+.button:nth-child(4n):active {
+    background-color: #e64a19; /* Botones de operaciones más oscuros al presionar */
+}
+
+.button:last-child {
+    background-color: #ff5722; /* Botón "=" rojo diferente */
+}
+
+.button:last-child:active {
+    background-color: #e64a19; /* Botón "=" más oscuro al presionar */
+}
